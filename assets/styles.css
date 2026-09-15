@@ -42,8 +42,8 @@ h1 em { color: var(--red); font-family: var(--serif-cn); font-style: normal; fon
 .hero-stats div { border-top: 1px solid var(--line); padding-top: 13px; }
 .hero-stats dt { font-weight: 800; font-size: 1rem; }
 .hero-stats dd { margin: 2px 0 0; color: var(--muted); font-size: .82rem; }
-.hero-visual { position: relative; min-height: 550px; }
-.hero-image { position: absolute; inset: 0 0 25px 8%; width: 92%; height: calc(100% - 25px); display: block; object-fit: cover; object-position: 68% center; border-radius: 52% 48% 12px 12px / 22% 25% 10px 10px; }
+.hero-visual { position: relative; min-height: 0; align-self: center; padding: 0 0 25px 8%; }
+.hero-image { position: relative; width: 100%; height: auto; aspect-ratio: 8 / 5; display: block; object-fit: contain; border-radius: 52% 48% 12px 12px / 22% 25% 10px 10px; }
 .tone-card { position: absolute; left: 0; bottom: 0; width: 250px; background: var(--gold); padding: 24px 25px; box-shadow: 0 15px 35px rgba(8,28,50,.18); }
 .tone-card span { display: block; font-family: var(--serif-cn); font-size: 2.2rem; margin-bottom: 6px; }
 .tone-card strong { font-size: .86rem; letter-spacing: .04em; }
@@ -104,7 +104,7 @@ footer p { margin: 0; color: #aec0ce; }
   nav.open { display: flex; }
   .hero { grid-template-columns: 1fr; padding-top: 45px; }
   h1 { font-size: clamp(3.3rem,15vw,6rem); }
-  .hero-visual { min-height: 460px; }
+  .hero-visual { min-height: 0; padding-left: 0; }
   .story-grid, .paths-heading, .self-check, .circle { grid-template-columns: 1fr; gap: 45px; }
   .path-grid { grid-template-columns: 1fr; }
   .path-grid article, .path-grid article:first-child { padding: 32px 0 70px; min-height: 250px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
@@ -121,8 +121,8 @@ footer p { margin: 0; color: #aec0ce; }
   .hero-actions { align-items: flex-start; flex-direction: column; margin-bottom: 45px; }
   .hero-stats { grid-template-columns: 1fr; }
   .hero-stats div { display: grid; grid-template-columns: 100px 1fr; }
-  .hero-visual { min-height: 370px; }
-  .hero-image { left: 0; width: 100%; object-position: 66% center; }
+  .hero-visual { min-height: 0; }
+  .hero-image { width: 100%; }
   .tone-card { width: 210px; padding: 18px; }
   .ticker { grid-template-columns: repeat(2,1fr); gap: 10px; }
   .section { padding-top: 75px; padding-bottom: 75px; }
