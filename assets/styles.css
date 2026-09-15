@@ -43,7 +43,7 @@ h1 em { color: var(--red); font-family: var(--serif-cn); font-style: normal; fon
 .hero-stats dt { font-weight: 800; font-size: 1rem; }
 .hero-stats dd { margin: 2px 0 0; color: var(--muted); font-size: .82rem; }
 .hero-visual { position: relative; min-height: 550px; }
-.hero-image { position: absolute; inset: 0 0 25px 8%; background: linear-gradient(145deg,rgba(8,28,50,.08),rgba(120,149,167,.08)), url("niihaao-hero.png"); background-size: cover; background-position: 68% center; border-radius: 52% 48% 12px 12px / 22% 25% 10px 10px; overflow: hidden; }
+.hero-image { position: absolute; inset: 0 0 25px 8%; width: 92%; height: calc(100% - 25px); display: block; object-fit: cover; object-position: 68% center; border-radius: 52% 48% 12px 12px / 22% 25% 10px 10px; }
 .tone-card { position: absolute; left: 0; bottom: 0; width: 250px; background: var(--gold); padding: 24px 25px; box-shadow: 0 15px 35px rgba(8,28,50,.18); }
 .tone-card span { display: block; font-family: var(--serif-cn); font-size: 2.2rem; margin-bottom: 6px; }
 .tone-card strong { font-size: .86rem; letter-spacing: .04em; }
@@ -122,7 +122,7 @@ footer p { margin: 0; color: #aec0ce; }
   .hero-stats { grid-template-columns: 1fr; }
   .hero-stats div { display: grid; grid-template-columns: 100px 1fr; }
   .hero-visual { min-height: 370px; }
-  .hero-image { left: 0; }
+  .hero-image { left: 0; width: 100%; object-position: 66% center; }
   .tone-card { width: 210px; padding: 18px; }
   .ticker { grid-template-columns: repeat(2,1fr); gap: 10px; }
   .section { padding-top: 75px; padding-bottom: 75px; }
