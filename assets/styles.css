@@ -42,9 +42,9 @@ h1 em { color: var(--red); font-family: var(--serif-cn); font-style: normal; fon
 .hero-stats div { border-top: 1px solid var(--line); padding-top: 13px; }
 .hero-stats dt { font-weight: 800; font-size: 1rem; }
 .hero-stats dd { margin: 2px 0 0; color: var(--muted); font-size: .82rem; }
-.hero-visual { position: relative; width: 100%; aspect-ratio: 8 / 5; align-self: center; }
-.hero-image { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; border-radius: 220px 220px 16px 16px; }
-.tone-card { position: absolute; left: -36px; bottom: -50px; width: 250px; background: var(--gold); padding: 24px 25px; box-shadow: 0 15px 35px rgba(8,28,50,.18); }
+.hero-visual { position: relative; width: 100%; align-self: center; padding-bottom: 62px; }
+.hero-image { position: static; width: 100%; height: auto; display: block; border-radius: 26px; box-shadow: 0 24px 55px rgba(8,28,50,.16); }
+.tone-card { position: absolute; left: -28px; bottom: 0; width: 250px; background: var(--gold); padding: 24px 25px; box-shadow: 0 15px 35px rgba(8,28,50,.18); }
 .tone-card span { display: block; font-family: var(--serif-cn); font-size: 2.2rem; margin-bottom: 6px; }
 .tone-card strong { font-size: .86rem; letter-spacing: .04em; }
 .ticker { color: white; background: var(--red); display: grid; grid-template-columns: repeat(4,1fr); padding: 17px 5vw; text-align: center; font-family: var(--serif-cn); font-weight: 700; letter-spacing: .08em; }
@@ -122,8 +122,8 @@ footer p { margin: 0; color: #aec0ce; }
   .hero-stats { grid-template-columns: 1fr; }
   .hero-stats div { display: grid; grid-template-columns: 100px 1fr; }
   .hero-visual { min-height: 0; }
-  .hero-image { border-radius: 120px 120px 12px 12px; }
-  .tone-card { left: 0; bottom: -38px; }
+  .hero-image { border-radius: 18px; }
+  .tone-card { left: 16px; bottom: 0; }
   .tone-card { width: 210px; padding: 18px; }
   .ticker { grid-template-columns: repeat(2,1fr); gap: 10px; }
   .section { padding-top: 75px; padding-bottom: 75px; }
